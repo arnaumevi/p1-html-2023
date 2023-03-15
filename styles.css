@@ -1,9 +1,46 @@
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: #1effe1;
-    height: 150px;
+body {
+  font-size: Montserrat, sans-serif;
+  background-color: rgb(208, 204, 204);
+}
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.nav-list {
+  width: 80%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+ul li {
+  border-style: solid;
+  border-left: none;
+}
+ul li:first-of-type {
+  border-left: solid;
+}
+
+.nav-item {
+  flex: 1;
+  list-style-type: none;
+
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+.nav-list li:first-of-type {
+  background-color: rgb(62, 64, 64);
+}
+.nav-list li:last-of-type {
+  background-color: rgb(226, 181, 239);
+}
+.nav-list .nav-item:first-of-type a {
+  color: white;
 }
