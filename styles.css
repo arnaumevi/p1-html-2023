@@ -1,19 +1,11 @@
 body {
   font-size: Montserrat, sans-serif;
-  background-color: rgb(208, 204, 204);
-}
-
-.navbar {
+  background-color: white;
   display: flex;
   justify-content: center;
-}
-.nav-list {
-  width: 80%;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: column;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 ul li {
   border-style: solid;
@@ -23,10 +15,23 @@ ul li:first-of-type {
   border-left: solid;
 }
 
+.navbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 .nav-item {
   flex: 1;
   list-style-type: none;
-
   padding: 1rem;
   font-weight: bold;
 }
@@ -43,4 +48,46 @@ ul li:first-of-type {
 }
 .nav-list .nav-item:first-of-type a {
   color: white;
+}
+
+section div span {
+  margin: 1rem;
+}
+.home h1 {
+  margin: 0.1rem;
+}
+div h1 {
+  line-height: 0.3rem;
+}
+
+div img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+p {
+  line-height: 1rem;
+  font-weight: bold;
+  padding: 6%;
+  line-height: 140%;
+  text-align: left;
+}
+.home-flex {
+  display: flex;
+}
+
+.myself {
+  display: flex;
+  flex: 1;
+  border-style: solid;
+  border-top: 0;
+  text-align: center;
+  flex-direction: column;
+}
+.myself h1:first-of-type {
+  padding-top: 25%;
+}
+
+.myself:first-of-type {
+  border-right: 0;
 }
