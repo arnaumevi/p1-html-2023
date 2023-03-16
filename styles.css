@@ -1,5 +1,4 @@
 body {
-  font-size: Montserrat, sans-serif;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -7,32 +6,26 @@ body {
   padding-left: 17%;
   padding-right: 17%;
 }
-ul li {
-  border-style: solid;
-  border-left: none;
-}
-ul li:first-of-type {
-  border-left: solid;
-}
 
-.navbar {
-  height: 6rem;
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-nav {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
 }
-
-.nav-list {
+nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex: 1;
-  text-align: center;
-  padding-left: 0;
-  margin-bottom: 0;
 }
-
+nav li {
+  margin-left: 2em;
+}
 .nav-item {
-  flex: 1;
-  list-style-type: none;
-  padding: 1rem;
+  margin-left: 0.3rem;
+  font-size: 1vw;
   font-weight: bold;
 }
 
@@ -53,11 +46,21 @@ ul li:first-of-type {
 section div span {
   margin: 1rem;
 }
-.home h1 {
-  margin: 0.1rem;
+h1 {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 1.5vw;
+  line-height: 0.3vw;
 }
-div h1 {
-  line-height: 0.3rem;
+h3 {
+  font-weight: bold;
+  text-align: left;
+  background-color: black;
+  margin: 0;
+  height: 2vw;
+  color: white;
+  font-size: 1.2vw;
 }
 
 div img {
@@ -66,11 +69,12 @@ div img {
   vertical-align: middle;
 }
 p {
-  line-height: 1rem;
+  line-height: 12%;
   font-weight: bold;
-  padding: 6%;
-  line-height: 140%;
+  margin: 1.6vw;
+  line-height: 1.9vw;
   text-align: left;
+  font-size: 1.2vw;
 }
 .home-flex {
   display: flex;
@@ -80,14 +84,21 @@ p {
   display: flex;
   flex: 1;
   border-style: solid;
-  border-top: 0;
   text-align: center;
   flex-direction: column;
 }
 .myself h1:first-of-type {
-  padding-top: 25%;
+  padding-top: 15%;
 }
 
 .myself:first-of-type {
   border-right: 0;
+}
+
+.empty {
+  width: 99.5%;
+  height: 4vw;
+
+  border-style: solid;
+  border-top: 0;
 }
