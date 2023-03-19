@@ -64,7 +64,11 @@ h3 {
   color: white;
   font-size: 1.2vw;
 }
-
+.empty h4 {
+  margin-top: 2.5%;
+  margin-left: 1%;
+  font-style: italic;
+}
 div img {
   max-width: 100%;
   max-height: 1000%;
@@ -75,7 +79,7 @@ p {
   font-weight: bold;
   margin: 1.6vw;
   line-height: 1.9vw;
-  text-align: left;
+  text-align: b;
   font-size: 1.2vw;
 }
 .home-flex {
@@ -122,10 +126,18 @@ p {
   flex: 1;
   border-style: solid;
   text-align: center;
-  flex-direction: row;
-
+  flex-direction: column;
   border-top: 0;
 }
+.exp2 {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid;
+  text-align: center;
+  flex-direction: column;
+  border-top: 0;
+}
+
 .exp:first-of-type {
   border-right: 0;
 }
@@ -133,7 +145,8 @@ p {
   width: 40%;
   height: 40%;
   margin: 6%;
-
+  margin-bottom: 1%;
+  margin-left: 25%;
   border-style: solid;
   border-width: thin;
 }
