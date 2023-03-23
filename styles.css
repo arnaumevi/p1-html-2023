@@ -8,25 +8,20 @@ body {
 }
 
 .container-nav {
-  display: flex;
-  justify-content: flex-end;
-  height: 5vw;
+  height: 4.5rem;
   margin-left: 0%;
-  align-items: flex-end;
 }
-div ul {
+.nav-list {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
-  column-gap: 2%;
-  width: 70%;
+  justify-content: space-around;
 }
 
 .nav-item {
   margin-top: 0.8rem;
   margin-left: 0.3rem;
-  font-size: 1.2vw;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -44,7 +39,21 @@ div ul {
 .nav-list .nav-item:first-of-type a {
   color: white;
 }
-
+.contactlink {
+  background-color: rgb(226, 181, 239);
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+.contactlink a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
 section div span {
   margin: 1rem;
 }
@@ -103,6 +112,7 @@ p {
   border-style: solid;
   text-align: center;
   flex-direction: column;
+  position: relative;
 }
 .myself h1:first-of-type {
   padding-top: 16%;
@@ -177,7 +187,7 @@ p {
   float: right;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .home-flex {
     display: flex;
     padding-top: 1%;
@@ -197,6 +207,7 @@ p {
   div img {
     max-width: 50%;
     max-height: 50%;
+    margin-left: 25%;
   }
   .myself {
     display: flex;
@@ -259,5 +270,21 @@ p {
     line-height: 1rem;
     text-align: center;
     font-size: 0.7rem;
+  }
+  .container-nav {
+    height: 1.5rem;
+    margin-left: 0%;
+  }
+  .nav-item {
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
