@@ -186,6 +186,22 @@ p {
 .exp p {
   float: right;
 }
+.container {
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container input {
+  border-style: solid;
+  border-radius: 10%;
+  height: 2rem;
+  margin-bottom: 4rem;
+  font-style: ;
+  margin-top: 4rem;
+  font-size: 1rem;
+  padding: auto;
+}
 
 @media (max-width: 1200px) {
   .home-flex {
